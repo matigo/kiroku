@@ -1,0 +1,52 @@
+{
+    "lang_name": "Español",
+    "lang_culture": "es-ES",
+    "iso-639-1": "es",
+    "iso-639-2": "spa",
+
+    "lblEdit": "Editar",
+    "lblTags": "Etiquetas",
+
+    "lblEnableJS": "Habilite JavaScript para ver este sitio",
+    "msgFooter": "Desarrollado por Kiroku",
+    "copyright": "Copyright &copy; {year}",
+    "version": "Versión {version_id}",
+
+    "unlockLogIn": "Inicie sesión con su cuenta",
+    "unlockLogInBtn": "Iniciar sesión",
+    "unlockAcctNamePH": "(Su dirección de correo electrónico)",
+    "unlockAcctPassPH": "(Su contraseña)",
+    "unlockRememberMe": "Recuérdame",
+    "unlockAccessCode": "Ingrese con su código de acceso",
+    "unlockAccessCodePH": "(Su código de acceso)",
+    "unlockAccessBtn": "Ingresar al sitio",
+
+    "optCCLicenseCC0": "(CC0) Liberar contenido globalmente sin restricciones",
+    "optCCLicenseBY": "(POR) Atribución sola",
+    "optCCLicenseBYSA": "(BY-SA) Attribution-ShareAlike",
+    "optCCLicenseBYNC": "(BY-NC) Reconocimiento-No comercial",
+    "optCCLicenseBYNCSA": "(BY-NC-SA) Attribution-NonCommercial-ShareAlike",
+    "optCCLicenseBYND": "(BY-ND) Attribution-NoDerivatives",
+    "optCCLicenseBYNCND": "(BY-NC-ND) Attribution-NonCommercial-SinDerivatives",
+
+    "msg401Line1": "No se puede hacer",
+    "msg401Line2": "Lo sentimos, pero no parece tener las credenciales correctas necesarias para acceder a este recurso.",
+    "msg403Line1": "Acceso denegado",
+    "msg403Line2": "No tiene permiso para acceder a este recurso.",
+    "msg404Line1": "Recurso no encontrado",
+    "msg404Line2": "Lo siento. No estoy seguro de lo que está buscando.",
+    "msg420Line1": "¡Reduzca la velocidad!",
+    "msg420Line2": "Ha realizado demasiadas solicitudes en muy poco tiempo.<br>Comparta el servicio con todos.",
+    "msg422Line1": "¡Sin dados, Romeo!",
+    "msg422Line2": "No tiene sentido.<br>Piense antes de actuar",
+    "msg500Title": "Algo no va del todo bien",
+    "msg500Line1": "¡Oh, no!",
+    "msg500Line2": "Un momento, por favor. <br> Algo no está bien",
+
+    "errCantUpload": "No se pudo cargar el archivo",
+    "errNeedName": "Introduzca su nombre de inicio de sesión",
+    "errNeedPass": "Ingrese su contraseña",
+    "errCantPass": "Confirme su nombre de usuario y contraseña",
+
+    "msgServerError": "Se ha producido un error crítico. Lo sentimos mucho y estamos trabajando para solucionarlo."
+}

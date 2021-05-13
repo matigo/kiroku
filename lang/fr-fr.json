@@ -1,0 +1,52 @@
+{
+    "lang_name": "Français",
+    "lang_culture": "fr-FR",
+    "iso-639-1": "fr",
+    "iso-639-2": "fra",
+
+    "lblEdit": "Modifier",
+    "lblTags": "Tags",
+
+    "lblEnableJS": "Veuillez activer JavaScript pour afficher ce site",
+    "msgFooter": "Propulsé par Kiroku",
+    "copyright": "Copyright &copy; {year}",
+    "version": "Version {version_id}",
+
+    "unlockLogIn": "Connectez-vous avec votre compte",
+    "unlockLogInBtn": "Connexion",
+    "unlockAcctNamePH": "(Votre adresse e-mail)",
+    "unlockAcctPassPH": "(Votre mot de passe)",
+    "unlockRememberMe": "Remember Me",
+    "unlockAccessCode": "Entrez avec votre code d'accès",
+    "unlockAccessCodePH": "(Votre code d'accès)",
+    "unlockAccessBtn": "Entrer sur le site",
+
+    "optCCLicenseCC0": "(CC0) Libérer du contenu globalement sans restrictions",
+    "optCCLicenseBY": "(BY) Attribution seule",
+    "optCCLicenseBYSA": "(BY-SA) Attribution-ShareAlike",
+    "optCCLicenseBYNC": "(BY-NC) Attribution-NonCommercial",
+    "optCCLicenseBYNCSA": "(BY-NC-SA) Attribution-NonCommercial-ShareAlike",
+    "optCCLicenseBYND": "(BY-ND) Attribution-NoDerivatives",
+    "optCCLicenseBYNCND": "(BY-NC-ND) Attribution-NonCommercial-NoDerivatives",
+
+    "msg401Line1": "Impossible de faire",
+    "msg401Line2": "Désolé, mais vous ne semblez pas disposer des informations d'identification requises pour accéder à cette ressource.",
+    "msg403Line1": "Accès refusé",
+    "msg403Line2": "Vous n'êtes pas autorisé à accéder à cette ressource.",
+    "msg404Line1": "Ressource introuvable",
+    "msg404Line2": "Désolé. Je ne sais pas trop ce que vous recherchez.",
+    "msg420Line1": "Ralentissez!",
+    "msg420Line2": "Vous avez fait trop de demandes en trop peu de temps.<br>Veuillez partager le service avec tout le monde.",
+    "msg422Line1": "Pas de dés, Roméo!",
+    "msg422Line2": "Vous n'avez pas de sens.<br>Réfléchissez avant d'agir.",
+    "msg500Title": "Quelque chose ne va pas",
+    "msg500Line1": "Oh non!",
+    "msg500Line2": "Un instant, s'il vous plaît.<br>Quelque chose ne va pas.",
+
+    "errCantUpload": "Impossible de télécharger le fichier",
+    "errNeedName": "Veuillez entrer votre nom de connexion",
+    "errNeedPass": "Veuillez entrer votre mot de passe",
+    "errCantPass": "Veuillez confirmer votre identifiant et votre mot de passe",
+
+    "msgServerError": "Une erreur critique s'est produite. Nous sommes terriblement désolés pour cela et travaillons sur un correctif."
+}
