@@ -18,9 +18,8 @@
             <div class="form-content hidden">
                 <ul class="btn-tabs">
                     <li><button class="btn btn-tab selected" data-item="login">[tabLogin]</button></li>
-                    <li><button class="btn btn-tab" data-item="sso">[tabSSO]</button></li>
                 </ul>
-                <div class="form-items" data-item="login">
+                <div class="form-items">
                     <form action="[HOMEURL]/api/auth/login" class="login-form" method="POST">
                         <h3>[loginTitle]</h3>
                         <input class="form-control" type="text" id="account_name" name="account_name" placeholder="[loginAcctNamePH]" data-reqmsg="[loginAcctNameError]" autocomplete="off" spellcheck="off" required>
@@ -31,10 +30,6 @@
                         </div>
                         <a href="[HOMEURL]/forgot" title="[loginForgotTitle]">[loginForgot]</a>
                     </form>
-                </div>
-                <div class="form-items hidden" data-item="sso">
-                    <h3>[loginSSO]</h3>
-                    <button class="btn btn-sso">[btnSSO]</button>
                 </div>
                 <div class="form-items hidden" data-item="expired">
                     <div>

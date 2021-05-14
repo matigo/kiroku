@@ -1,0 +1,18 @@
+{
+    "lang_name": "සිංහල",
+    "lang_culture": "si-SI",
+    "iso-639-1": "si",
+    "iso-639-2": "sin",
+
+    "welcomeLine": "හෙලෝ, {display_name}!",
+
+    "optEnUK": "English (UK)",
+    "optEnUS": "English",
+    "optEoUS": "Esperanto",
+    "optEsES": "Español",
+    "optJaJP": "日本語",
+    "optKoKO": "한국어",
+    "optRuRU": "русский",
+    "optSiSI": "සිංහල",
+    "optTaTA": "தமிழ்"
+}

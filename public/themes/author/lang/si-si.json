@@ -1,8 +1,9 @@
 {
     "lblJournals": "ජර්නල්",
+    "lblContentPH": "සටහනක් ලිවීම ආරම්භ කරන්න ...",
     "lblTags": "ටැග්",
     "lblTitle": "මාතෘකාව",
-    "lblTitlePH": "(විකල්ප)",
+    "lblTitlePH": "මාතෘකාව",
     "lblProfile": "පැතිකඩ",
     "lblPrefLang": "භාෂාව",
     "lblPrefName": "නම",
@@ -10,10 +11,17 @@
     "lblPrefTime": "කාල කලාපය",
     "lblAcctType": "වර්ගය",
 
+    "lblSearchPH": "සොයන්න ...",
+
+    "navCreate": "සාදන්න!",
+    "navFavourites": "ප්‍රියතමයන්",
     "navHome": "මුල් පිටුව",
+    "navJournals": "ජර්නල්",
     "navMyProfile": "මගේ පැතිකඩ",
     "navPreferences": "මනාප",
+    "navRecents": "මෑත",
     "navSignOut": "ඉවත් වන්න",
+    "navTasks": "කාර්යයන්",
 
     "btnSignIn": "පුරනය වන්න",
     "btnCancel": "අවලංගු කරන්න",

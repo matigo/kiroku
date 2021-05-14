@@ -197,7 +197,7 @@ class Auth {
                               '[TOKEN_GUID]'   => sqlScrub($data[2]),
                               '[LIFESPAN]'     => nullInt(TOKEN_EXPY),
                              );
-            $sqlStr = prepSQLQuery("CALL GetTokenData([TOKEN_ID], '[TOKEN_GUID]', [LIFESPAN]);", $ReplStr);
+            $sqlStr = prepSQLQuery("CALL AuthTokenData([TOKEN_ID], '[TOKEN_GUID]', [LIFESPAN]);", $ReplStr);
             $rslt = doSQLQuery($sqlStr);
             if ( is_array($rslt) ) {
                 foreach ( $rslt as $Row ) {
@@ -210,8 +210,7 @@ class Auth {
                                    '_display_name'  => NoNull($Row['display_name']),
                                    '_first_name'    => NoNull($Row['first_name']),
                                    '_last_name'     => NoNull($Row['last_name']),
-                                   '_pronoun'       => NoNull($Row['pronoun']),
-                                   '_email'         => NoNull($Row['email']),
+                                   '_email'         => NoNull($Row['login']),
 
                                    '_avatar_file'   => NoNull($Row['avatar'], 'default.png'),
                                    '_account_type'  => NoNull($Row['type'], 'account.unknown'),
@@ -224,8 +223,6 @@ class Auth {
                                    '_fontfamily'    => NoNull($Row['pref_fontfamily'], 'auto'),
                                    '_fontsize'      => NoNull($Row['pref_fontsize'], 'auto'),
                                    '_colour'        => NoNull($Row['pref_colour'], 'auto'),
-                                   '_showlables'    => NoNull($Row['pref_showlabels'], 'auto'),
-                                   '_guidematch'    => NoNull($Row['pref_guidematch'], 'auto'),
 
                                    '_pass_change'   => $reqPassChange,
                                    '_token_id'      => nullInt($Row['token_id']),
@@ -263,14 +260,12 @@ class Auth {
 
         // Ensure We Have the Data, and Check the Database
         if ( $AcctName != "" && $AcctPass != "" && $AcctName != $AcctPass ) {
-            $ReplStr = array( '[USERADDR]'   => sqlScrub($AcctName),
-                              '[USERPASS]'   => sqlScrub($AcctPass),
-                              '[SHA_SALT]'   => sqlScrub(SHA_SALT),
-                              '[SAML_GUID]'  => '',
-                              '[SAML_IDENT]' => '',
-                              '[SAML_SESS]'  => '',
+            $ReplStr = array( '[USERADDR]' => sqlScrub($AcctName),
+                              '[USERPASS]' => sqlScrub($AcctPass),
+                              '[SHA_SALT]' => sqlScrub(SHA_SALT),
+                              '[LIFESPAN]' => nullInt(TOKEN_EXPY),
                              );
-            $sqlStr = prepSQLQuery( "CALL PerformLogin('[USERADDR]', '[USERPASS]', '[SHA_SALT]', '[SAML_GUID]', '[SAML_IDENT]', '[SAML_SESS]');", $ReplStr );
+            $sqlStr = prepSQLQuery( "CALL AuthLogin('[USERADDR]', '[USERPASS]', '[SHA_SALT]', [LIFESPAN]);", $ReplStr );
             $rslt = doSQLQuery($sqlStr);
             if ( is_array($rslt) ) {
                 foreach ( $rslt as $Row ) {
@@ -318,7 +313,7 @@ class Auth {
                                   '[TOKEN_ID]'   => alphaToInt($data[1]),
                                   '[TOKEN_GUID]' => sqlScrub($data[2]),
                                  );
-                $sqlStr = prepSQLQuery( "CALL PerformLogout([TOKEN_ID], '[TOKEN_GUID]');", $ReplStr );
+                $sqlStr = prepSQLQuery( "CALL AuthLogout([TOKEN_ID], '[TOKEN_GUID]');", $ReplStr );
                 $rslt = doSQLQuery($sqlStr);
                 if ( is_array($rslt) ) {
                     foreach ( $rslt as $Row ) {

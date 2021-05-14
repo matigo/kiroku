@@ -1,8 +1,9 @@
 {
     "lblJournals": "Journals",
+    "lblContentPH": "Start writing a note ...",
     "lblTags": "Tags",
     "lblTitle": "Title",
-    "lblTitlePH": "(Optional)",
+    "lblTitlePH": "Title",
     "lblProfile": "Profile",
     "lblPrefLang": "Language",
     "lblPrefName": "Name",
@@ -10,10 +11,17 @@
     "lblPrefTime": "Timezone",
     "lblAcctType": "Type",
 
+    "lblSearchPH": "Search ...",
+
+    "navCreate": "Create!",
+    "navFavourites": "Favorites",
     "navHome": "Home",
+    "navJournals": "Journals",
     "navMyProfile": "My Profile",
     "navPreferences": "Preferences",
+    "navRecents": "Recent",
     "navSignOut": "Sign Out",
+    "navTasks": "Tasks",
 
     "btnSignIn": "Sign In",
     "btnCancel": "Cancel",

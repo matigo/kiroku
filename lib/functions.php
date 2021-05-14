@@ -1168,7 +1168,6 @@
 
         // Do Not Proceed If We Don't Have SQL Settings
         if ( !defined('DB_SERV') ) { return false; }
-        if ( !in_array($dbname, array('nextcloud', DB_NAME)) ) { $dbname = DB_NAME; }
 
         // Determine Which Database is Required, and Connect If We Don't Already Have a Connection
         if ( !$mysql_db ) {
