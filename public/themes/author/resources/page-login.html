@@ -1,48 +1,37 @@
-    <body class="login">
-        <section class="system-message hidden">
-            <div class="offline hidden">
-                <p>There does not seem to be a working network connection. Now operating in offline mode.</p>
-            </div>
-        </section>
-        <section class="compat hidden">
-            <div class="message">
-                <p class="compat-msg head" data-msg="[compatMsgHead]">[compatMsgHead]</p>
-                <p class="compat-msg" data-msg="[compatMsgVersion]">&nbsp;</p>
-                <p class="compat-msg" data-msg="[compatMsgReq]">[compatMsgDefault]</p>
-            </div>
-        </section>
-        <section class="login-body">
-            <div class="form-title">
-                <h1>[SITE_NAME]</h1>
-            </div>
-            <div class="form-content hidden">
-                <ul class="btn-tabs">
-                    <li><button class="btn btn-tab selected" data-item="login">[tabLogin]</button></li>
-                </ul>
-                <div class="form-items">
-                    <form action="[HOMEURL]/api/auth/login" class="login-form" method="POST">
-                        <h3>[loginTitle]</h3>
-                        <input class="form-control" type="text" id="account_name" name="account_name" placeholder="[loginAcctNamePH]" data-reqmsg="[loginAcctNameError]" autocomplete="off" spellcheck="off" required>
-                        <input class="form-control" type="password" id="account_pass" name="account_pass" placeholder="[loginAcctPassPH]" data-reqmsg="[loginAcctPassError]" autocomplete="off" spellcheck="off" required>
-                        <input type="hidden" name="webreq" value="Y" />
-                        <div class="form-button text-center">
-                            <button class="btn btn-signin" data-label="[btnLogin]" disabled>[btnLogin]</button>
-                        </div>
-                        <a href="[HOMEURL]/forgot" title="[loginForgotTitle]">[loginForgot]</a>
-                    </form>
-                </div>
-                <div class="form-items hidden" data-item="expired">
-                    <div>
-                        <h3>[loginExpired]</h3>
-                        <p>[loginExpiredMessage]</p>
+    <body>
+        <div class="form-body">
+            <div class="row" style="overflow: hidden;">
+                <div class="img-holder">
+                    <div class="bg"></div>
+                    <div class="info-holder">
+                        <h3>[loginPitch1]</h3>
+                        <p>[loginPitch2]</p>
+                        <img src="[IMG_DIR]/graphic5.svg" alt="">
                     </div>
                 </div>
-                <div class="form-response hidden">&nbsp;</div>
+                <div class="form-holder">
+                    <div class="form-content">
+                        <div class="form-items" data-item="login">
+                            <div>
+                                <h3>[loginTitle]</h3>
+                                <input class="form-control" type="text" id="account_name" name="fdata" placeholder="[loginAcctNamePH]" data-reqmsg="[loginAcctNameError]" required>
+                                <input class="form-control" type="password" id="account_pass" name="fdata" placeholder="[loginAcctPassPH]" data-reqmsg="[loginAcctPassError]" required>
+                                <p>[loginForgot]</p>
+                                <div class="form-button text-center">
+                                    <button class="ibtn btn-signin" data-label="[btnSignIn]" disabled>[btnSignIn]</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-items hidden" data-item="expired">
+                            <div>
+                                <h3>[loginExpired]</h3>
+                                <p>[loginExpiredMessage]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="footer">
-            <span>[copyright][copyMsg]</span>
-        </section>
+        </div>
     </body>
     <script type="text/javascript" src="[HOMEURL]/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="[HOMEURL]/js/bootstrap.min.js"></script>

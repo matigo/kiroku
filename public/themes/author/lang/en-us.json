@@ -38,6 +38,8 @@
     "loginForgotTitle": "Click here to request a new password",
     "loginAcctNameError": "Please enter your account name",
     "loginAcctPassError": "Please enter your password",
+    "loginPitch1": "Get more done with QS Notes",
+    "loginPitch2": "Tasks, lists, notes, journals, and more! All in one place.",
 
     "lblSetFontFamily": "Font Type",
     "lblSetFontAuto": "Default",
