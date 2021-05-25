@@ -211,6 +211,7 @@ section.header {
     width: 100%;
 }
 section.header h1 {
+    cursor: pointer;
     display: inline-block;
     vertical-align: text-top;
     padding: 5px 15px;
@@ -231,13 +232,14 @@ section.header .search input {
     border-radius: 5px;
     display: inline-block;
     font-size: 1.1em;
+    outline: none;
     vertical-align: text-top;
     padding: 5px 10px;
     margin: 5px 0 0;
 
-    max-width: 400px;
     width: calc(100% - 125px);
 }
+section.header .search input::placeholder { color: #ccc; }
 section.header .search button {
     border-color: transparent !important;
     background-color: transparent !important;
@@ -382,6 +384,8 @@ section.content {
     overflow-x: hidden;
     overflow-y: auto;
     vertical-align: text-top;
+    padding: 0;
+    margin: 0 auto;
     height: calc(100vh - 50px);
     width: calc(100% - 400px);
 
@@ -390,6 +394,7 @@ section.content {
 }
 
 section.content input {
+    border-radius: 0;
     border-bottom: 1px solid var(--border-color);
     border-right: none;
     border-left: none;
@@ -397,7 +402,7 @@ section.content input {
     display: block;
     outline: none;
     padding: 5px;
-    margin: 10px 0;
+    margin: 10px auto;
     width: calc(100% - 25px);
 }
 section.content input.title {
@@ -413,7 +418,7 @@ section.content textarea {
     display: block;
     outline: none;
     padding: 5px 10px;
-    margin: 0;
+    margin: 0 auto;
     min-height: calc(100vh - 200px);
     width: calc(100% - 25px);
 }
